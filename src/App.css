@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Jost&family=Poppins:wght@400;500;700&display=swap');
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    list-style-type: none !important;
+    text-decoration: none !important;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.ff_Poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.ff_dm_sans {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.ff_Jost {
+    font-family: 'Jost', sans-serif;
+}
+
+/* root */
+
+:root {
+    /* font_size */
+    --fs-10xl: 64px;
+    --fs-9xl: 48px;
+    --fs-8xl: 36px;
+    --fs-7xl: 32px;
+    --fs-6xl: 24px;
+    --fs-5xl: 22px;
+    --fs-4xl: 21px;
+    --fs-3xl: 20px;
+    --fs-2xl: 18px;
+    --fs-xl: 17px;
+    --fs-lg: 16px;
+    --fs-md: 15px;
+    --fs-sm: 13px;
+    --fs-ss: 12px;
+
+    /* color */
+
+    --color-black: #000000;
+    --color-yellow: #FBB034;
+    --color-white: #FFFFFF;
+    --color-lightwhite: #E8E8E8;
+    --color-lightwhite2: #B8B8B8;
+    --color-lightwhite_bg: #F6F6F6;
+    --color-grey: #9A9A9A;
+    --color-darkgrey: #565656;
+    --color-grey2: #ABABAB;
+    --color-grey3: #C2C2C2;
+    --color-grey4: #CECECE;
+
+}
+
+/* color */
+.black {
+    color: var(--color-black) !important;
+}
+
+.yellow {
+    color: var(--color-yellow) !important;
+}
+
+.white {
+    color: var(--color-white) !important;
+}
+
+.lightwhite {
+    color: var(--color-lightwhite);
+}
+
+.lightwhite2 {
+    color: var(--color-lightwhite2);
+}
+
+.lightwhite_bg {
+    background: var(--color-lightwhite_bg);
+}
+
+.grey {
+    color: var(--color-grey);
+}
+
+.darkgrey {
+    color: var(--color-darkgrey);
+}
+
+.grey2 {
+    color: var(--color-grey2);
+}
+
+.grey3 {
+    color: var(--color-grey3);
+}
+
+.grey4 {
+    color: var(--color-grey4);
+}
+
+/* bg */
+
+.black_bg {
+    background: var(--color-black);
+}
+
+/* font_size */
+
+.fs_10xl {
+    font-size: var(--fs-10xl);
+}
+
+.fs_9xl {
+    font-size: var(--fs-9xl);
+}
+
+.fs_8xl {
+    font-size: var(--fs-8xl);
+}
+
+.fs_7xl {
+    font-size: var(--fs-7xl);
+}
+
+.fs_6xl {
+    font-size: var(--fs-6xl);
+}
+
+.fs_5xl {
+    font-size: var(--fs-5xl);
+}
+
+.fs_4xl {
+    font-size: var(--fs-4xl);
+}
+
+.fs_3xl {
+    font-size: var(--fs-3xl);
+}
+
+.fs_2xl {
+    font-size: var(--fs-2xl);
+}
+
+.fs_xl {
+    font-size: var(--fs-xl);
+}
+
+.fs_lg {
+    font-size: var(--fs-lg);
+}
+
+.fs_md {
+    font-size: var(--fs-md);
+}
+
+.fs_sm {
+    font-size: var(--fs-sm);
+}
+
+.fs_ss {
+    font-size: var(--fs-ss);
+}
+
+/* font-weight */
+
+.fw_700 {
+    font-weight: 700;
+}
+
+.fw_500 {
+    font-weight: 500;
+}
+
+.fw_400 {
+    font-weight: 400;
+}
+
+/* nav */
+
+.nav_line {
+    background: orange;
+    padding: 3px 18px;
+    margin-top: 3px;
+    border-radius: 5px;
+    z-index: 6;
+}
+
+nav ul li a {
+    transition: all 0.6s linear;
+}
+
+.nav_a:hover {
+    color: var(--color-yellow) !important;
+}
+
+/* Button */
+
+.button {
+    background: var(--color-yellow);
+    padding: 18px 53px;
+    transition: all 0.6s linear;
+    border: 2px solid var(--color-yellow);
+}
+
+.button:hover {
+    border-radius: 15px;
+    border: 2px solid var(--color-white);
+}
+
+.button_2 {
+    border: 1px solid var(--color-white);
+    padding: 18px 46px;
+    transition: all 0.5s linear;
+}
+
+.button_2:hover {
+    background: var(--color-yellow);
+    padding: 18px 46px;
+    border-radius: 15px;
+}
+
+/* Hero */
+header {
+    background: url(./assets/img/png/hero_bg_img.png) no-repeat center;
+    background-size: cover;
+}
+
+.hero_img_w {
+    height: 523px;
+    width: 615px;
+}
+
+/* About */
+.About::before {
+    content: 'ABOUT';
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: var(--fs-10xl);
+    color: #EDEDED;
+    left: -140px;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+.About_bg_img {
+    background: url(./assets/img/png/best-bg.png) no-repeat center;
+    background-size: cover;
+}
+
+/* Book */
+.Book_bg {
+    background: url(./assets/img/png/book_bg.png) no-repeat center;
+    background-size: cover;
+}
+
+.Book_box {
+    height: 283px;
+    width: 320px;
+    background: var(--color-white);
+}
+
+.Book_box_call_box {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #E8E8E8;
+}
+
+#Appointment {
+    color: white !important;
+}
+
+
+/* WORKING DAYS */
+
+.WORKING_DAYS_p::after {
+    content: 'WORKING';
+    position: absolute;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    left: 110px;
+    top: -20px;
+    font-size: var(--fs-10xl);
+    color: rgba(236, 236, 236, 0.1);
+}
+
+.WORKING_DAYS_w {
+    max-height: 1134px;
+    background: var(--color-yellow);
+}
+
+.WORKING_DAYS_Monday_w {
+    max-width: 367px;
+    border-bottom: 1px dashed #000000;
+}
+
+.WORKING_DAYS_btn {
+    border: 1px solid var(--color-black);
+    padding: 10px 44px;
+}
+
+/* Testimonials */
+.Testimonials_p::after {
+    content: 'TESTIMONIALS';
+    position: absolute;
+    font-size: var(--fs-10xl);
+    color: var(--color-grey4);
+    left: 180px;
+    bottom: -24px;
+    font-weight: 400;
+    line-height: 106.5%;
+    font-family: 'Jost', sans-serif;
+    opacity: 0.3;
+}
+
+.Testimonials_box {
+    height: 100%;
+    max-width: 320px;
+    padding: 40px 32px;
+    background: var(--color-white);
+    box-shadow: 9px 25px 10px rgba(0, 0, 0, 0.01), 5px 14px 9px rgba(0, 0, 0, 0.05), 2px 6px 6px rgba(0, 0, 0, 0.09), 1px 2px 4px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.Testimonials_box::after {
+    content: url(./assets/img/png/coma-umar.png);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Testimonials_box_img {
+    height: 291px;
+    width: 291px;
+    right: -50px;
+    bottom: -150px;
+}
+
+/* Affiliate */
+
+.Affiliate_bg_img {
+    background: url(./assets/img/png/join-us-bg.png) no-repeat center;
+    background-size: cover;
+}
+
+.Affiliate_btn {
+    padding: 17px 41px;
+    border: 1px solid var(--color-yellow);
+}
+
+.Affiliate_h2_w {
+    max-width: 566px;
+}
+
+/* Footer_last */
+.Footer_last_btn {
+    background: #FBB034;
+    border-radius: 8px;
+    padding: 14px 41px;
+}
+
+.emali_footer {
+    outline: none;
+    background-color: #000000;
+    border: none;
+    opacity: 0.5;
+    color: white;
+}
+
+.emali_footer_btn {
+    height: 50px;
+    width: 50px;
+    border-radius: [object Object]px;
+    background: #FBB034;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.footer_big_hr {
+    height: 1px;
+    width: 100%;
+    background: var(--color-white);
+    opacity: 0.1;
+}
+
+.favicon svg:hover {
+    transform: translateY(-15%);
+}
+
+@media (min-width:992px) {
+    .About_h2_w_lg {
+        width: 451px;
+    }
+
+    .Book_p_w_lg {
+        width: 339px;
+    }
+
+    .WORKING_DAYS_w {
+        max-height: 393px;
+        max-width: 1134px;
+    }
+}
+
+@media (max-width:992px) {
+    nav ul {
+        position: fixed;
+        top: 0px;
+        left: -100%;
+        background: black;
+        width: 100%;
+        height: 100vh !important;
+        transition: 0.9s;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        z-index: 5;
+    }
+
+    #check:checked~.nav_left {
+        left: 0;
+    }
+}
+
+@media (max-width:992px) {
+    :root {
+        /* font_size */
+        --fs-10xl: 55px;
+        --fs-9xl: 44px;
+        --fs-8xl: 33px;
+        --fs-7xl: 28px;
+        --fs-6xl: 22px;
+        --fs-5xl: 20px;
+    }
+}
+
+@media (max-width:576px) {
+    :root {
+        /* font_size */
+        --fs-10xl: 38px;
+        --fs-9xl: 29px;
+        --fs-8xl: 25px;
+        --fs-7xl: 34px;
+        --fs-6xl: 21px;
+        --fs-5xl: 19px;
+        --fs-4xl: 18px;
+        --fs-3xl: 17px;
+        --fs-2xl: 16px;
+        --fs-xl: 15px;
+        --fs-lg: 14px;
+        --fs-md: 13px;
+        --fs-sm: 12px;
+    }
+}
+
+@media (max-width:576px) {
+    .Book_box {
+        height: 200px;
+        width: 250px;
+    }
+
+    .Testimonials_p::after {
+        left: 80px;
+        bottom: -10px;
+    }
+
+    .WORKING_DAYS_p::after {
+        left: 80px;
+        top: -20px;
+    }
+}
